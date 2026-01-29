@@ -110,4 +110,30 @@ nom_deprov_rbd,
 gen_alu
 HAVING nom_deprov_rbd LIKE "%ANTOFAGASTA - TOCOPILLA%";
 
+SELECT 
+    l.zona,
+    a.gen_alu AS genero,
+    COUNT(*) AS total
+FROM asistencia AS a
+INNER JOIN localidad AS l 
+ON a.nom_rbd = l.nom_rbd
+WHERE l.zona IN ('NORTE GRANDE')
+GROUP BY 
+l.zona, 
+a.gen_alu
+ORDER BY l.zona, genero;
+
+SELECT 
+    l.zona,
+    a.gen_alu AS genero,
+    COUNT(*) AS total
+FROM asistencia AS a
+INNER JOIN localidad AS l 
+ON a.nom_rbd = l.nom_rbd
+WHERE l.zona IN ('Zona Sur')
+GROUP BY 
+l.zona,
+a.gen_alu
+ORDER BY l.zona, genero;
+
 
