@@ -50,24 +50,24 @@ El análisis incluye:
 
 ## Resultados / Insights
 Gracias al análisis realizado y a la implementación de SQL, se pudo confirmar la hipótesis planteada donde se observa que en los meses de junio y agosto, la asistencia de los estudiantes de la provincia de Magallanes es menor que la de los estudiantes de Antofagasta. 
- La hipotesis sobre la asistencia en comparación entre niños y niñas no es correcta ya que la asistencia entre ellos es casi igual solo con una diferencia de un 0.5%.
+ La hipotesis sobre la asistencia en comparación entre hombres y mujeres no es correcta ya que la asistencia entre ellos es casi igual solo con una diferencia de un 0.5%.
 
 ## Recomendaciones de negocios
 
 Se plantea luego de una evaluación crear dos medidas útiles:
 - Sistemas de Monitoreo en Tiempo Real: Implementación de software para la gestión y seguimiento de asistencia, que envíe alertas automáticas a los apoderados.
-- Transporte Escolar de "Última Milla": Un servicio que facilite el traslado desde puntos críticos de difícil acceso en días de lluvia, reduciendo la deserción estacional.
-
+- Transporte Escolar de "Última Milla": Un servicio que facilite el traslado desde puntos críticos de difícil acceso en días de clima adverso, reduciendo la deserción estacional.
 
 ## Limitaciones
 No se dispone de datos sobre justificante o razones de las inasistencias de los alumnos a las clases.
 El análisis se basa en datos históricos de año 2019 y no incorpora variables actuales.
 Se podría agregar el dataset actual con el Histórico Meteorológico de la Dirección Meteorológica de Chile para validar la correlación entre milímetros de lluvia/nieve y ausentismo de alumnos.
 
-
 ## Próximos pasos
 
-
+Con mayor tiempo analizariamos la diferencia de asistencia entre alumnos de establecimientos que se ubican en zonas rurales y urbanas.
+A su vez analizariamos los datos de Santiago de Chile para luego compararlos con los resultados que arrojaron este primer análisis. 
+Con un panorama nacional avanzaremos en el desarrollo de un programa para mejorar la asistencia que abarque todo el país. 
 
 ## Cómo replicar el proyecto
 1. Clonar el repositorio.
