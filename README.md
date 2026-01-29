@@ -9,10 +9,7 @@ Mejorar la asistencia de estudiantes en Magallanes de Chile implementando medida
 
 
 ## Contexto del negocio
-Este proyecto se plantea como un caso de consultoría para el Ministerio de Educación de Chile.  
-Se plantea luego de una evaluación crear dos medidas útiles:
-- Sistemas de Monitoreo en Tiempo Real: Implementación de software para la gestión y seguimiento de asistencia, que envíe alertas automáticas a los apoderados.
-- Transporte Escolar de "Última Milla": Un servicio que facilite el traslado desde puntos críticos de difícil acceso en días de lluvia, reduciendo la deserción estacional.
+Este proyecto se plantea como una consultora especializada en educación, la cual el Ministerio de Educación de Chile nos ha solicitado un análisis de la asistencia de los estudiantes durante el período invernal en el Sur y Norte del país. Con ello se busca identificar patrones y factores que influyen en la asistencia escolar, con el objetivo de proponer estrategias para mejorar la regularidad y reducir la deserción estacional.
 
 
 ----
@@ -24,10 +21,10 @@ Tomados de la página web www.kaggle.com
 Contiene información sobre:
 
 - Ubicación geográfica (cuidad,localidad, latitud, longitud)
-- 
+- Asistencia de los estudiantes (ciudad,mes,año,dias asistidos, días trabajados)
 
 Las variables principales utilizadas en el análisis son:  
-.
+."año", "mes_escolar", "nom_rbd", "nom_com_rbd", "nom_deprov_rbd", "rural_rbd", "gen_alu", "dias_asistidos", "dias_trabajados","rbd" , "nom_rbd" , "nom_com_rbd", "lon" , "lat", "zona"
 
 
 ## Notas sobre la calidad del dato
@@ -35,8 +32,7 @@ El dataset presenta problemas de datos faltantes que han requerido procesos de l
 
 - Valores nulos en variables como latitud, longitud
 - Demasiados datos y columnas que no necesitamos estudiar para nuestras hipótesis.
-
-Se han tomado decisiones de limpieza y estandarización para garantizar la coherencia del análisis y la cantidad de datos de estudio por lo que nos hemos centrado en las provincias de Antofagasta y Magallanes.
+- Se han tomado decisiones de limpieza y estandarización para garantizar la coherencia del análisis y la cantidad de datos de estudio por lo que nos hemos centrado en las provincias de Antofagasta y Magallanes.
 
 
 ---
@@ -57,5 +53,27 @@ El análisis incluye:
 
 
 ## Resultados / Insights
-- 
+Gracias al análisis realizado y a la implementación de SQL, se pudo confirmar la hipótesis planteada donde se observa que en los meses de junio y agosto, la asistencia de los estudiantes de la provincia de Magallanes es menor que la de los estudiantes de Antofagasta. 
+ La hipotesis sobre la asistencia en comparación entre niños y niñas no es correcta ya que la asistencia entre ellos es casi igual solo con una diferencia de un 0.5%.
 
+## Recomendaciones de negocios
+
+Se plantea luego de una evaluación crear dos medidas útiles:
+- Sistemas de Monitoreo en Tiempo Real: Implementación de software para la gestión y seguimiento de asistencia, que envíe alertas automáticas a los apoderados.
+- Transporte Escolar de "Última Milla": Un servicio que facilite el traslado desde puntos críticos de difícil acceso en días de lluvia, reduciendo la deserción estacional.
+
+
+## Limitaciones
+No se dispone de datos sobre justificante o razones de las inasistencias de los alumnos a las clases.
+El análisis se basa en datos históricos de año 2019 y no incorpora variables actuales.
+Se podría agregar el dataset actual con el Histórico Meteorológico de la Dirección Meteorológica de Chile para validar la correlación entre milímetros de lluvia/nieve y ausentismo de alumnos.
+
+
+## Próximos pasos
+
+
+
+## Cómo replicar el proyecto
+1. Clonar el repositorio.
+2. Instalar las librerías necesarias ( pandas, numpy, mysql).
+3. Ejecutar el cuaderno a través de github.
