@@ -2,18 +2,15 @@
 Proyecto de la semana 3 bootcamp Data
 
 ## TÍTULO 
-Plan de implementacion para mejorar la asistencia de estudiantes en las provincias de Antofagasta y de Magallanes de Chile
+Plan de implementacion para mejorar la asistencia de estudiantes de las provincias Antofagasta - Tocopilla y Magallanes de Chile.
 
 ## Objetivo del proyecto
-Mejorar la asistencia de estudiantes en Magallanes de Chile implementando medidas útiles. 
-
+Mediante los resultados obtenidos del analisis se buscará mejorar la asistencia de estudiantes en Magallanes a traves de un plan de acción. 
 
 ## Contexto del negocio
 Este proyecto se plantea como una consultora especializada en educación, la cual el Ministerio de Educación de Chile nos ha solicitado un análisis de la asistencia de los estudiantes durante el período invernal en el Sur y Norte del país. Con ello se busca identificar patrones y factores que influyen en la asistencia escolar, con el objetivo de proponer estrategias para mejorar la regularidad y reducir la deserción estacional.
 
-
 ----
-
 
 ## Dataset
 Los datasets utilizados recogen registros de la asistencia  de los estudiantes de todo Chile y las localidades de los establecimientos educativos. 
@@ -32,15 +29,14 @@ El dataset presenta problemas de datos faltantes que han requerido procesos de l
 
 - Valores nulos en variables como latitud, longitud
 - Demasiados datos y columnas que no necesitamos estudiar para nuestras hipótesis.
-- Se han tomado decisiones de limpieza y estandarización para garantizar la coherencia del análisis y la cantidad de datos de estudio por lo que nos hemos centrado en las provincias de Antofagasta y Magallanes.
+- Se han tomado decisiones de limpieza y estandarización para garantizar la coherencia del análisis y la cantidad de datos de estudio por lo que nos hemos centrado en las provincias de Antofagasta - Tocopilla y Magallanes.
 
 
 ---
 
-
 ## Preguntas clave / Hipótesis
-1. En los meses de junio y agosto, la asistencia de los estudiantes de la provincia de Magallanes es menor que la de los estudiantes de Antofagasta. 
-2. En los meses de junio y agosto, la asistencia de las niñas es menor que la de los niños. 
+1. En los meses de Junio y Agosto, la asistencia de los estudiantes de la provincia de Magallanes es menor que la de los estudiantes de Antofagasta - Tocopilla. 
+2. En los meses de Junio y Agosto, la asistencia de las mujeres es menor que la de los hombres. 
 
 
 ## Proceso de análisis

@@ -1,28 +1,37 @@
 USE ed_chile;
 
+-- Vemos los datos de tabla asistencia
 SELECT *
 FROM asistencia;
 
+-- vemos los datos de tabla localidad
 SELECT *
 FROM localidad;
 
+-- vemos el año de analisis de los datos
 SELECT 
 año
 FROM asistencia;
 
+-- diferentes cantidades de días que asisten los alumnos
 SELECT 
 DISTINCT dias_asistidos
-FROM asistencia;
+FROM asistencia
+ORDER BY dias_asistidos;
 
+-- Cambiamos el nombre de la columna rbd en la tabla localidad por colegio_id
 ALTER TABLE localidad
 RENAME COLUMN rbd TO colegio_id;
 
+-- Modificamos la columna colegio_id para que sea primary key y se complete en orden
 ALTER TABLE localidad
 MODIFY COLUMN colegio_id INT AUTO_INCREMENT PRIMARY KEY;
 
+-- creamos una columna de asistencia_id que sea primary key y se complete en orden
 ALTER TABLE asistencia
 ADD COLUMN asistencia_id INT AUTO_INCREMENT PRIMARY KEY;
 
+-- creamos una variable colegio_id para unir nuestras tablas
 ALTER TABLE asistencia
 ADD COLUMN colegio_id INT;
 
