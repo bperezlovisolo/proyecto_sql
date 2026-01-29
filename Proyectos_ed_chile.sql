@@ -5,3 +5,7 @@ FROM asistencia;
 
 SELECT *
 FROM localidad;
+
+SELECT 
+año
+FROM asistencia;
