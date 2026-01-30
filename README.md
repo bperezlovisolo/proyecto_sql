@@ -50,7 +50,7 @@ El análisis incluye:
 
 ## Resultados / Insights
 Gracias al análisis realizado y a la implementación de SQL, se pudo confirmar la hipótesis planteada donde se observa que en los meses de junio y agosto, la asistencia de los estudiantes de la provincia de Magallanes es menor que la de los estudiantes de Antofagasta. 
- La hipotesis sobre la asistencia en comparación entre hombres y mujeres no es correcta ya que la asistencia entre ellos es casi igual solo con una diferencia de un 0.5%.
+ La hipotesis sobre la asistencia en comparación entre hombres y mujeres no es correcta ya que la asistencia entre ellos es casi igual solo con una diferencia de un 0.43%.
 
 ## Recomendaciones de negocios
 
