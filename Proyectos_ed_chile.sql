@@ -113,7 +113,7 @@ HAVING nom_deprov_rbd LIKE "%ANTOFAGASTA - TOCOPILLA%";
 SELECT 
     l.zona,
     a.gen_alu AS genero,
-    COUNT(*) AS total
+     ROUND(SUM(dias_asistidos) * 100 / SUM(dias_trabajados), 2) AS pct_asistencia
 FROM asistencia AS a
 INNER JOIN localidad AS l 
 ON a.nom_rbd = l.nom_rbd
@@ -126,7 +126,7 @@ ORDER BY l.zona, genero;
 SELECT 
     l.zona,
     a.gen_alu AS genero,
-    COUNT(*) AS total
+     ROUND(SUM(dias_asistidos) * 100 / SUM(dias_trabajados), 2) AS pct_asistencia
 FROM asistencia AS a
 INNER JOIN localidad AS l 
 ON a.nom_rbd = l.nom_rbd
