@@ -117,10 +117,10 @@ SELECT
 FROM asistencia AS a
 INNER JOIN localidad AS l 
 ON a.nom_rbd = l.nom_rbd
-WHERE l.zona IN ('NORTE GRANDE')
 GROUP BY 
 l.zona, 
 a.gen_alu
+HAVING l.zona IN ('NORTE GRANDE')
 ORDER BY l.zona, genero;
 
 SELECT 
@@ -130,10 +130,10 @@ SELECT
 FROM asistencia AS a
 INNER JOIN localidad AS l 
 ON a.nom_rbd = l.nom_rbd
-WHERE l.zona IN ('Zona Sur')
 GROUP BY 
 l.zona,
 a.gen_alu
+HAVING l.zona IN ('Zona Austral')
 ORDER BY l.zona, genero;
 
 
